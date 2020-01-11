@@ -10,6 +10,11 @@ const Popular = React.lazy(() => import('./components/Popular'))
 const Battle = React.lazy(() => import('./components/Battle'))
 const Results = React.lazy(() => import('./components/Results'))
 
+const App = () => {
+  const [theme, setTheme] = React.useState('light') 
+  const toggleTheme = () => setTheme((theme) => theme === 'light' ? 'dark' : 'light')
+}
+
 class App extends React.Component {
   state = {
     theme: 'light',
