@@ -36,20 +36,6 @@ const App = () => {
   )
 }
 
-class App extends React.Component {
-  state = {
-    theme: 'light',
-    toggleTheme: () => {
-      this.setState(({ theme }) => ({
-        theme: theme === 'light' ? 'dark' : 'light'
-      }))
-    }
-  }
-  render() {
-    
-  }
-}
-
 ReactDOM.render(
   <App />,
   document.getElementById('app')
